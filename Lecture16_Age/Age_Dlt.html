@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Object Remove</title>
+    
+</head>
+<body>
+    <h1>Student Object Remove</h1>
+    <p>Click on the button to remove the <b>Age</b> property</p>
+    <p id="demo"></p>
+    <button onclick="removeAge()">Remove Age</button>
+
+    <script>
+        let student = {
+            Name: "Prachi",
+            Age: 19,
+            Rollno: 29,
+        };
+
+function displayStudent() {
+    let result = "Name: " + student.name + "<br>Age: " + student.age + "<br>Roll Number: " + student.rollno;
+    document.getElementById("demo").innerHTML = result;
+
+     }
+
+        function removeAge() {
+            if (student.hasOwnProperty('age')) {
+                delete student.age;
+            }
+            displayStudent();
+        }
+        displayStudent();
+    </script>
+</body>
+
+</html>
