@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>To-Do List Pro</title>
+   
+
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+     
+</head>
+
+<body>
+
+    <nav class="nav" id="nav">
+        <div class="nav-wrap">
+            <div class="brand">
+                <div class="logo"><i class="fa-solid fa-list-check"></i></div>
+                <div>TodoList</div>
+            </div>
+
+            <div class="nav-links">
+                <button class="chip active" data-link="home"><i class="fa-solid fa-house"></i> Home</button>
+                <button class="chip" data-link="today"><i class="fa-solid fa-sun"></i> Today</button>
+                <button class="chip" data-link="completed"><i class="fa-solid fa-check"></i> Completed</button>
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input id="search" type="text" placeholder="Search tasks...">
+            </div>
+
+            <div class="actions">
+                <button id="theme" class="btn ghost" title="Toggle theme"><i class="fa-solid fa-moon"></i></button>
+                <button class="btn">Sign in</button>
+                <div class="avatar"><i class="fa-regular fa-user"></i></div>
+            </div>
+        </div>
+    </nav>
+
+
+    <main class="wrap">
+        <section class="card">
+            <div class="header">
+                <input id="newTask" type="text" placeholder="What do you need to do?" />
+                <button id="add" class="btn primary"><i class="fa-solid fa-plus"></i> Add Task</button>
+                <button id="clearAll" class="btn"><i class="fa-solid fa-broom"></i> Clear All</button>
+            </div>
+
+            <div class="toolbar">
+                <div class="pill active" data-filter="all">All</div>
+                <div class="pill" data-filter="active">Active</div>
+                <div class="pill" data-filter="done">Completed</div>
+                <span class="muted" id="count">0 items</span>
+            </div>
+
+            <div class="list" id="list"></div>
+
+            <div class="footer">
+                <span class="muted">Tip: Press <b>Enter</b> to add, <b>/</b> to focus search.</span>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
