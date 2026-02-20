@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List Pro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1 class="logo">TodoList</h1>
+    <nav>
+      <button class="nav-btn">Home</button>
+      <button class="nav-btn">Today</button>
+      <button class="nav-btn">Completed</button>
+    </nav>
+    <input type="text" id="searchBox" placeholder="Search tasks...">
+    <button id="signInBtn">Sign in</button>
+  </header>
+
+  <main class="main">
+    <div class="todo-box">
+      <input type="text" id="taskInput" placeholder="Enter a task...">
+      <button id="addBtn">Add Task</button>
+      <button id="clearBtn">Clear All</button>
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="active">Active</button>
+        <button class="filter-btn" data-filter="completed">Completed</button>
+      </div>
+
+      <ul id="taskList"></ul>
+      <p id="taskCount">0 items</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
