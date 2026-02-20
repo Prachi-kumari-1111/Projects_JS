@@ -1,0 +1,80 @@
+body {
+         font-family: Arial, sans-serif;
+        background-color: #f5faff;
+        margin: 0;
+        padding: 0;
+        }
+    .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 20px;
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .header .logo {
+            color: #1e90ff;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .header .nav-links {
+            display: flex;
+            align-items: center;
+        }
+        .header .nav-links a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #666;
+            font-size: 14px;
+        }
+        .header .nav-links a.join {
+            color: #1e90ff;
+            font-weight: bold;
+        }
+        .search-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #e6f0fa;
+            padding: 140px;
+            margin: 30px;
+            border-radius: 20px;
+        }
+        .search-section input {
+            width: 40%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-right: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            font-size: 16px;
+            color: #999;
+        }
+        .search-section button {
+            padding: 20px 20px;
+            background-color: #1e90ff;
+            color: white;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .results {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 10px;
+        }
+        .card {
+            width: 150px;
+            height: 120px;
+            background-color: #e6e6e6;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 10px;
+            font-size: 14px;
+            color: #333;
+        }
