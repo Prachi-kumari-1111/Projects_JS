@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Button Click</title>
+    
+</head>
+<body>
+    <h2>Student Object Remove</h2>
+    <p>Click on the button to remove the box</p>
+
+<button onclick="deleteBox()">Delete Box</button>
+<div id="box" style="width:150px; height:150px; background-color:red; margin-top:20px;"></div>
+
+<script>
+    function deleteBox() {
+        var box = document.getElementById("box");
+        box.remove(); 
+    }
+</script>
+</body>
+</html>
